@@ -31,9 +31,6 @@ function Header({ sessionId }: { sessionId: string }) {
         </div>
 
         <div className="flex items-center gap-3">
-          <Badge variant="secondary" className="hidden font-mono text-xs sm:flex" data-testid="badge-session-id">
-            {sessionId.slice(0, 8)}...
-          </Badge>
           <Button
             size="icon"
             variant="ghost"
@@ -74,24 +71,6 @@ function EmptyState() {
         <p className="max-w-md text-muted-foreground" data-testid="text-welcome-description">
           Describe the topic or idea you want to share, and I'll help you craft an engaging post that resonates with your professional network.
         </p>
-      </div>
-      <div className="flex flex-wrap justify-center gap-2">
-        {[
-          "Leadership insights",
-          "Career growth tips",
-          "Industry trends",
-          "Personal stories",
-          "Professional achievements",
-        ].map((suggestion) => (
-          <Badge
-            key={suggestion}
-            variant="outline"
-            className="cursor-default px-3 py-1.5 text-sm"
-            data-testid={`badge-suggestion-${suggestion.toLowerCase().replace(/\s+/g, "-")}`}
-          >
-            {suggestion}
-          </Badge>
-        ))}
       </div>
     </motion.div>
   );
