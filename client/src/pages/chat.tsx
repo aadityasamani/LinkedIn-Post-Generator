@@ -25,7 +25,7 @@ function Header({ sessionId }: { sessionId: string }) {
             <Sparkles className="h-5 w-5 text-primary-foreground" />
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-bold tracking-tight" data-testid="text-app-title">Lyzer Agent</span>
+            <span className="text-lg font-bold tracking-tight" data-testid="text-app-title">Aaditya's AI Agent</span>
             <span className="hidden text-xs text-muted-foreground sm:block">LinkedIn Viral Post Generator</span>
           </div>
         </div>
@@ -67,7 +67,6 @@ function EmptyState() {
           <Linkedin className="h-10 w-10 text-primary-foreground" />
         </div>
       </div>
-
       <div className="space-y-2 text-center">
         <h2 className="text-2xl font-bold tracking-tight" data-testid="text-welcome-title">
           Create Viral LinkedIn Posts
@@ -76,7 +75,6 @@ function EmptyState() {
           Describe the topic or idea you want to share, and I'll help you craft an engaging post that resonates with your professional network.
         </p>
       </div>
-
       <div className="flex flex-wrap justify-center gap-2">
         {[
           "Leadership insights",
